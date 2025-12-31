@@ -1,0 +1,75 @@
+
+.skills-circles-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.circles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circular-chart {
+  width: 120px;
+  height: 120px;
+}
+.chart-rotate {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 6;
+}
+
+
+.circle {
+  fill: none;
+  stroke: #00c896; /* green */
+   stroke-linecap: round;
+  transition: stroke-dasharray 1s ease;
+}
+
+.percentage {
+  fill: #fff;
+  font-size: 0.5em;
+  font-weight: bold;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
+.skill-circle h2 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+
+
+
+/* Tablet - 2 circles per row */
+@media (max-width: 1024px) {
+  .circles-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile - 1 circle per row */
+@media (max-width: 600px) {
+  .circles-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,203 @@
+/* Base styles (Desktop 1200px+) */
+.payment-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  font-family: sans-serif;
+}
+
+.payment-section .top-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side h6 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #00c896;
+}
+
+.left-side h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.right-side {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.vertical-border {
+  width: 2px;
+  background-color: #00c896;
+  height: 60px;
+}
+
+.right-side p {
+  margin: 0;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+/* Cards layout */
+.pay-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 0;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.pay-card {
+  width: 350px;
+  max-width: 100%; /* Prevent overflow */
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  gap: 0px;
+  padding: 25px 0px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.09);
+}
+
+.pay-card img {
+  margin-bottom: 22px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.pay-card h2,
+.pay-card h3 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #00c896;
+}
+
+.pay-p1,
+.pay-p2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ddd;
+  line-height: 1.5;
+  max-width: 260px;
+}
+
+.pay-card hr {
+  width: 90%;
+  border: 1px solid gray;
+  margin: 15px 15px;
+}
+
+.pay-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #00c896;
+  color: white;
+  padding: 10px 18px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pay-btn::after {
+  content: "→";
+  background: white;
+  color: #00c896;
+  padding: 6px 8px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.pay-btn:hover {
+  background: #00b382;
+}
+
+/* Responsive Styles */
+
+/* Tablets & below 1024px */
+@media (max-width: 1024px) {
+  .pay-section {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Make 2 cards per row and center the last one if odd number */
+  .pay-card {
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+
+  /* Center last card if only 1 in the row */
+  .pay-section .pay-card:nth-child(odd):last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile & below 768px */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-side {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pay-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .pay-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .pay-p1,
+  .pay-p2 {
+    max-width: 100%;
+  }
+}
+
+/* Small mobiles 480px */
+@media (max-width: 480px) {
+  .left-side h1 {
+    font-size: 28px;
+  }
+
+  .pay-card h2,
+  .pay-card h3 {
+    font-size: 24px;
+  }
+
+  .pay-p1,
+  .pay-p2 {
+    font-size: 16px;
+  }
+
+  .pay-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+.about-page .a-page-section{
+    height: 90vh;
+    background-color: black;
+}
+.a-page-section .a-page-head{
+    max-width: 1200px;
+    height: 100%;
+    width: 90%;
+    margin: 0px auto;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.a-page-head h1{
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.a-page-head h1 span{
+    font-size: 58px;
+     font-weight: 700;
+    color: #00c896;
+}
+
+/* ###############About section */
+.about-page .about-section {
+ background-color: #f1f1f1 !important; 
+  color: black;
+}
+
+/* ###############payment section */
+.about-page .payment-section {
+    background-color: white !important;
+}
+.about-page .payment-section .top-section{
+    display: none;
+}
+
+.about-page .pay-card{
+    border: 1px solid transparent;
+     transition: all 0.8s ease;
+}
+.about-page .pay-card:hover{
+    background-color: #f1f1f1;
+    border: 1px solid #00c896;
+
+}
+.about-page .pay-card:hover p {
+  color: darkgray;   /* change to whatever color you want */
+  transition: color 0.8s ease;
+}

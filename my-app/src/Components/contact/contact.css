@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contact-page{
+    height: 100vh;
+}
+.contact-page .contact-h{
+    max-width: 1200px;
+    height: 100%;
+    width: 90%;
+    margin: 0px auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-h h1{
+    font-family: "Exo 2", sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.contact-h h1 span{
+    font-size: 54px;
+     font-weight: 700;
+    color: #00c896;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Individual Card */
+.contact-card {
+  background: #fff;
+  width: 300px;
+  padding: 25px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+}
+
+.contact-icon {
+  background: #00c896;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  font-size: 22px;
+}
+
+.contact-card h3 {
+  margin: 10px 0 5px;
+  font-size: 24px;
+  color: #222;
+  font-weight: 700;
+}
+
+.contact-card p {
+  font-size: 15px;
+  color: #444;
+}
+
+.cntct-sec-2 .news-section {
+  background-color: #f1f1f1 !important; 
+}
+
+.cntct-sec-2 .news-section .news-hh h1{
+    color: black !important;
+}
+
+

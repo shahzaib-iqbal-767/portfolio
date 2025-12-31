@@ -1,0 +1,265 @@
+
+.project-section {
+
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 60px 20px;
+  font-family: sans-serif;
+}
+.project-section .top-section {
+ width: 90%;
+  max-width: 1200px;
+   margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 40px; */
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+.project-section .top-section .left-side{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.left-side .left-bottom{
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 20px;
+}
+
+
+.left-side h6 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #00c896;
+}
+
+.left-side h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.right-side {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.vertical-border {
+  width: 2px;
+  background-color: #00c896;
+  height: 60px; /* same height as paragraph */
+}
+
+.right-side p {
+  margin: 0;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.arrows-box {
+  display: flex;
+  gap: 12px;
+}
+
+/* Arrow boxes */
+.arrow-btn {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Arrow icon */
+.arrow-btn span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Hover Animation */
+.arrow-btn:hover {
+  border-color: #00ff90;
+  transform: translateY(-4px);
+}
+
+.project-slider {
+   width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+}
+
+/* Card wrapper */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Image */
+.project-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  
+}
+
+/* Zoom on hover */
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00c896;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.overlay p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* SHOW overlay only on hover */
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+
+/* ###################Animate.css */
+
+/* Animation is added only when ".animate-section" is active */
+.animate-section .p-title-animate {
+  opacity: 0;
+}
+.animate-section .p-heading-animate {
+  opacity: 0;
+}
+.animate-section .p-para-animate {
+  opacity: 0;
+}
+
+/* When section is visible → animate */
+.animate-section .p-title-animate.animate__animated,
+.animate-section .p-heading-animate.animate__animated,
+.animate-section .p-para-animate.animate__animated {
+  opacity: 1;
+}
+
+.animate-section .p-title-animate {
+  animation: fadeInDown 1.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards !important;
+}
+
+.animate-section .p-heading-animate {
+  animation: fadeInLeftBig 2s cubic-bezier(0.23, 1, 0.32, 1) forwards !important;
+}
+
+.animate-section .p-para-animate {
+  animation: fadeInUp 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards !important;
+}
+
+
+
+
+
+/* ------ Tablet (max 1024px) ------ */
+@media (max-width: 1024px) {
+
+ 
+  .project-section .top-section .left-side {
+    gap: 20px;
+  }
+
+ 
+  .project-section .top-section .right-side p {
+    max-width: 300px;
+  }
+
+ 
+  .arrows-box .arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ------ Mobile (max 768px) ------ */
+@media (max-width: 768px) {
+
+ 
+.project-section .top-section {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 40px; */
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: nowrap;
+}
+
+  .project-section .top-section .left-side {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  
+  .project-section .top-section .right-side {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .project-section .top-section .left-side .left-bottom{
+    display: none;
+  }
+
+  
+  .project-section .top-section .right-side .vertical-border {
+    display: none;
+  }
+
+
+  .arrows-box {
+    margin-top: 10px;
+  }
+
+  .arrows-box .arrow-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* ------ Small Mobile (max 480px) ------ */
+@media (max-width: 480px) {
+
+  
+  .arrows-box .arrow-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+ 
+  .project-card img {
+    height: 220px;
+  }
+}

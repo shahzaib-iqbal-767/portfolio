@@ -1,0 +1,243 @@
+.news-section {
+    background-color: #000;
+    height: 65vh;
+     padding: 0px 20px;
+    padding-top: 100px; 
+    padding-bottom: 80px;
+    font-family: sans-serif;
+}
+
+.news-heading {
+    height: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.news-heading .news-hh {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-hh h3 {
+    color: #00c896;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.news-hh h1 {
+    color: white;
+    font-size: 44px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.news-hh h1 span {
+    color: #00c896;
+}
+
+.news-e-s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 50px;
+}
+
+.news-input {
+    width: 280px;
+    padding: 19px 16px;
+    font-size: 15px;
+    border-radius: 6px;
+    background: #2b2b2b;
+    border: 1px solid #00c896;
+    color: #fff;
+    outline: none;
+}
+
+.news-input::placeholder {
+    color: #c5c5c5;
+}
+
+
+/* Subscribe button */
+.news-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: #00c896;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.msg-box {
+    width: 28px;
+    height: 28px;
+    background: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+
+.msg-icon {
+    color: #00c896;
+    font-size: 16px;
+    transition: 0.4s ease;
+}
+
+.news-btn:hover {
+    background: transparent;
+    color: #00c896;
+    border: 1px solid #00c896;
+}
+
+.news-btn:hover .msg-box {
+    background: transparent;
+}
+
+.news-btn:hover .msg-icon {
+    color: #00c896;
+}
+
+
+
+
+/* Large Tablets / Small Laptops (1024px) */
+@media (max-width: 1024px) {
+    .news-hh h1 {
+        font-size: 38px;
+    }
+
+    .news-input {
+        width: 240px;
+        padding: 16px 14px;
+    }
+
+    .news-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .msg-box {
+        width: 24px;
+        height: 24px;
+    }
+
+    .msg-icon {
+        font-size: 14px;
+    }
+}
+
+/* Tablets (768px) */
+@media (max-width: 768px) {
+    .news-hh h1 {
+        font-size: 32px;
+    }
+
+    .news-hh h3 {
+        font-size: 13px;
+    }
+
+    .news-e-s {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .news-input {
+        width: 100%;
+        max-width: 300px;
+        padding: 14px 12px;
+    }
+
+    .news-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile Devices (480px) */
+@media (max-width: 480px) {
+    .news-hh h1 {
+        font-size: 28px;
+    }
+
+    .news-hh h3 {
+        font-size: 12px;
+    }
+
+    .news-input {
+        width: 100%;
+        max-width: 250px;
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+
+    .news-btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .msg-box {
+        width: 22px;
+        height: 22px;
+    }
+
+    .msg-icon {
+        font-size: 14px;
+    }
+}
+
+/* Extra Small Mobile (360px) */
+@media (max-width: 360px) {
+    .news-hh h1 {
+        font-size: 24px;
+    }
+
+    .news-hh h3 {
+        font-size: 11px;
+    }
+
+    .news-input {
+        max-width: 220px;
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    .news-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .msg-box {
+        width: 20px;
+        height: 20px;
+    }
+
+    .msg-icon {
+        font-size: 12px;
+    }
+}

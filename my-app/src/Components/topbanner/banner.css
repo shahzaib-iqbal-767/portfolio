@@ -1,0 +1,102 @@
+
+.banner-top {
+  background-color: #2c3239;
+  color: #fff;
+  padding: 10px 0;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid #222;
+}
+
+.banner-top .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner-top-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-icon {
+  background: #00c896;
+  color: #111;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  font-size: 15px;
+  color: #ddd;
+}
+
+.banner-top-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00c896;
+}
+
+.contact-btn {
+  background: #00c896;
+  color: white;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.contact-btn:hover {
+  border-color: rgba(0, 200, 150, 0.7);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* Tablets & below (1024px) */
+@media (max-width: 1024px) {
+  .banner-top .container {
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 768px) {
+  .banner-top .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner-top-left,
+  .banner-top-right {
+    justify-content: center;
+  }
+}

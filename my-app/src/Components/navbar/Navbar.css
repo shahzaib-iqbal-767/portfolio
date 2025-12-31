@@ -1,0 +1,131 @@
+
+.navbar {
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  background: #000;
+  color: #fff;
+  z-index: 999;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid #111;
+  
+  /* 1. Initial State (Hidden Above Viewport) */
+  transform: translateY(-100%); 
+  
+  /* 2. Apply Smooth Transition */
+  transition: transform 0.5s ease-in-out; 
+}
+
+/* 3. Animation State (Slide In) */
+.navbar-visible {
+  transform: translateY(0); 
+}
+
+.navbar-hidden {
+  transform: translateY(-100%); 
+}
+
+.navbar .container {
+  width: 90%;
+  height: 55px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.navbar .container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00c896;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.4s ease;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+ transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #00c896;
+  /* border-bottom: 1px solid #00c896; */
+}
+
+/* Search and Hamburger */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-icon {
+  font-size: 18px;
+  cursor: pointer;
+  color: #00c896;
+  transition: color 0.3s;
+}
+
+.search-icon:hover {
+  color: #00c896;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 992px) {
+  .menu-btn {
+    display: block;
+    z-index: 1001; 
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+    z-index: 1000; 
+  }
+
+  .nav-links.open {
+    max-height: 330px; 
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,81 @@
+
+.contact-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.contact-form {
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form h4 {
+  color: #00c896;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contact-form h1 {
+  font-size: 35px;
+  margin-bottom: 25px;
+  font-weight: 800;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 20px;
+  background: #f0f0f0;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #e7e7e7;
+}
+
+/* Submit Button */
+.contact-form button {
+   padding: 18px 20px;
+  background-color: #00c896;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  width: auto;          
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: auto;  
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: transparent;
+  color: #00c896;
+  border: 1px solid #00c896;
+  transition: all 0.4s;
+}
+
+.success-msg {
+  margin-top: 15px;
+  color: #00c896;
+  font-weight: 600;
+}

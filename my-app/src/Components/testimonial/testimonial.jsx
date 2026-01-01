@@ -42,8 +42,8 @@ const Testimonials = () => {
       <div className="top-section">
         <div className="left-side">
           <div>
-            <h6>What We Do</h6>
-            <h1>Services & Solutions</h1>
+            <h6>Testimonial</h6>
+            <h1>Satisfied Clients</h1>
           </div>
 
           <div className="left-bottom">

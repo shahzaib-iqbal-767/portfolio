@@ -53,8 +53,8 @@ const Projects = () => {
       <div className="top-section" ref={sectionRef}>
         <div className="left-side">
           <div>
-            <h6 className="p-title-animate">What We Do</h6>
-            <h1 className="p-heading-animate">Services & Solutions</h1>
+            <h6 className="p-title-animate">Valuable</h6>
+            <h1 className="p-heading-animate">Projects</h1>
           </div>
 
           <div className="left-bottom">

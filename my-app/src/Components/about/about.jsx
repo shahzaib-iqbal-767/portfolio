@@ -54,7 +54,7 @@ const AboutSection = () => {
               viewport={{ once: true }}
             >
               <Link to="/about">
-                READ MORE ABOUT ME
+                READ MORE
               </Link>
             </motion.a>
           </div>

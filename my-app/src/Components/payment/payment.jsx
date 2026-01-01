@@ -36,8 +36,8 @@ const Payments = () => {
       <div className="top-section">
         <div className="left-side">
           <div>
-            <h6>Experience</h6>
-            <h1>Skills & Expertise</h1>
+            <h6>Checkout</h6>
+            <h1>Pyament Method</h1>
           </div>
         </div>
         <div className="right-side">

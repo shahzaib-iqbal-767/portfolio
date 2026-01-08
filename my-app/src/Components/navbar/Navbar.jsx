@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
 
-  // 🔥 Function to scroll even when coming from another page
+  // Function to scroll even when coming from another page
   const scrollOrRedirect = (section) => {
     if (location.pathname !== "/") {
       navigate("/");
